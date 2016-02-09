@@ -144,12 +144,12 @@ void drawButton(int i)
   }
   else if (trialNum + 1 < 16 && trials.get(trialNum + 1) == i) { // upcoming target
     //fill(200);
-    fill(0, 255, 255, 80);
+    fill(230);
     x2 = bounds.x; // set x and y of arrow end
     y2 = bounds.y;
   }
   else
-    fill(200); // if not, fill gray
+    fill(100,100,100,100); // if not, fill gray
 
   rect(bounds.x, bounds.y, bounds.width, bounds.height); //draw button
 }
