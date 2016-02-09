@@ -111,13 +111,13 @@ void drawButton(int i)
     text(trials.get(trialNum) % 4 + 1, bounds.x+bounds.width/2, bounds.y+bounds.height/2 + 16); 
   }
   else if (trialNum < trials.size() - 1 && trials.get(trialNum+1) == i) { 
-    fill(255,165,0);
+    fill(180);
     rect(bounds.x, bounds.y, bounds.width, bounds.height); //draw button
     fill(255);
     text(trials.get(trialNum + 1) % 4 + 1, bounds.x+bounds.width/2, bounds.y+bounds.height/2 + 16); 
   }
   else {
-    fill(200); // if not, fill gray
+    fill(100); // if not, fill gray
     rect(bounds.x, bounds.y, bounds.width, bounds.height); //draw button
   }
   textSize(14);
